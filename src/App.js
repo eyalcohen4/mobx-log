@@ -6,7 +6,6 @@ import { Input, Button } from 'semantic-ui-react';
 import Entry from './Entry';
 import styled from 'styled-components';
 
-
 @observer
 class App extends Component {
 	state = {
@@ -44,8 +43,8 @@ class App extends Component {
 				</div>
 				<div>
 				<div style={{ display: 'flex', justifyContent: 'space-between' }}>
-						<p>In Work Hours: {this.props.log.onlyInWorkHours.length}</p>
-						<p>After Work Hours: {this.props.log.afterWorkHours.length}</p>
+						<p style={{ fontWeight: '600' }}>In Work Hours: {this.props.log.onlyInWorkHours.length}</p>
+						<p style={{ fontWeight: '600' }}>After Work Hours: {this.props.log.afterWorkHours.length}</p>
 					</div>
 					<ul style={{ margin: 0, padding: 0, listStyle: 'none' }}>
 						{this.props.log.entries ? this.props.log.entries.map((entry, index) => (
