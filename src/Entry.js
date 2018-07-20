@@ -22,14 +22,9 @@ const Icon = styled.span`
 class Entry extends Component {
 	state = { 
 		isEditing: false,
-		newMessage: '',
 	}
 
 	handleEdit = value => {
-		this.setState({
-			newMessage: value
-		});
-
 		this.props.onValueChange(value);
 	}
 
